@@ -1,0 +1,44 @@
+/*
+@keyframes animateslide{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        margin-left: 300px;
+    }
+}
+*/
+@keyframes animateslide{
+    0%{
+        opacity: 0;
+        background-color: #8c1;
+    }
+    40%{
+        opacity: 1;
+        margin-left: 100px;
+        background-color: red;
+        
+    }
+    100%{
+        opacity: 0;
+        margin-left: 50px;
+        margin-top: 100px;
+        background-color: black;
+    }
+}
+
+
+.ex{
+    animation: animateslide 5s infinite;
+    background-color: blue;
+    width: 600px;
+    height: 500px;
+}
+@media (max-width:400px){
+    .ex{
+        background-color: aqua;
+        width: 300px;
+        height: 500px;
+    }
+}
